@@ -100,7 +100,7 @@ icons.forEach((icon) => {
   // Insert the SVG or use an `<img>` tag for your icons
   span.innerHTML = `
     <img 
-      src="/images/spinner/${icon}.svg" 
+      src="images/spinner/${icon}.svg" 
       alt="${icon}" 
       style="width: 24px; height: 24px;"
     />
