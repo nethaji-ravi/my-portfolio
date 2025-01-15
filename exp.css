@@ -1,0 +1,199 @@
+.accordion {
+    --bs-accordion-border-width: 0;
+    --bs-accordion-border-radius: 0;
+  }
+  
+  .bs-timeline {
+    max-width: 600px;
+    /* margin: 0 auto; */
+    margin: 30px 10px;
+    margin-bottom: 50px;
+  }
+  
+  .accordion-item {
+      border-radius: 0;
+      padding-left: 25px;
+      padding-bottom: 20px;
+      border: none;
+      border-left: 2px solid #00C7FF;
+      background: none;
+      color: #7B89A8;
+  }
+  .accordion-body{
+    color: #7B89A8;
+
+  }
+  
+  .accordion-button::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 22px;
+    height: 22px;
+    border: 3px solid White;
+    outline: 1px solid #7B89A8;
+    right: 58px;
+    background-color: #7B89A8;
+    border-radius: 50%;
+    transition: all 0.25s ease;
+  }
+  
+  /* Bootstrap Timeline Thin Style */
+  
+  /* Item 1 */
+  
+  #tl-btn-1:not(.collapsed) {
+    color: #00C7FF;
+    /* background-color: White !important; */
+    background: none;
+    border: 1px solid #00C7FF;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    &::before {
+      background-color: #00C7FF;
+      outline-color: #00C7FF;
+    }
+    &::after {
+      filter: invert(48%) sepia(32%) saturate(5795%) hue-rotate(192deg)
+        brightness(101%) contrast(102%);
+    }
+  }
+  
+  /* Item 2 */
+  
+  #tl-btn-2:not(.collapsed) {
+    color: #00C7FF;
+    /* background-color: White !important; */
+    background: none;
+    border: 1px solid #00C7FF;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    &::before {
+      background-color: #00C7FF;
+      outline-color: #00C7FF;
+    }
+    &::after {
+      /* filter: invert(55%) sepia(61%) saturate(2557%) hue-rotate(2deg)
+        brightness(105%) contrast(106%); */
+    }
+  }
+  
+  /* Item 3 */
+  
+  #tl-btn-3:not(.collapsed) {
+    color: #00C7FF;
+    /* background-color: White !important; */
+    border: 1px solid #00C7FF;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    background: none;
+    &::before {
+      background-color: #00C7FF;
+      outline-color: #00C7FF;
+    }
+    &::after {
+      /* filter: invert(64%) sepia(35%) saturate(3888%) hue-rotate(296deg)
+        brightness(102%) contrast(101%); */
+    }
+  }
+  
+  #tl-btn-1.collapsed,
+  #tl-btn-2.collapsed,
+  #tl-btn-3.collapsed {
+    border: 1px solid #7B89A8;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+  
+  /* Bootstrap Timeline Solid Style */
+  
+  #tl-btn-4:not(.collapsed) {
+    color: White;
+    background-color: #00C7FF;
+    border: none;
+    border-radius: 0;
+    &::before {
+      background-color: #00C7FF;
+      outline-color: #00C7FF;
+    }
+    &::after {
+      filter: invert(100%) brightness(200%);
+    }
+  }
+  
+  /* Item 2 */
+  
+  #tl-btn-5:not(.collapsed) {
+    color: White;
+    background-color: #00C7FF;
+    border: none;
+    border-radius: 0;
+    &::before {
+      background-color: #00C7FF;
+      outline-color: #00C7FF;
+    }
+    &::after {
+      filter: invert(100%) brightness(200%);
+    }
+  }
+  
+  /* Item 3 */
+  
+  #tl-btn-6:not(.collapsed) {
+    color: White;
+    background-color: #00C7FF;
+    border: none;
+    border-radius: 0;
+    &::before {
+      background-color: #00C7FF;
+      outline-color: #00C7FF;
+    }
+    &::after {
+      filter: invert(100%) brightness(200%);
+    }
+  }
+  
+  #tl-btn-4.collapsed,
+  #tl-btn-5.collapsed,
+  #tl-btn-6.collapsed {
+    border: none;
+    border-radius: 0;
+    background-color: #eaeaea;
+  }
+  
+  /* Prevents sticky hover on portable devices */
+  
+  @media (hover: hover) {
+    #tl-btn-1:hover::before {
+      background-color: #00C7FF;
+      outline-color: #00C7FF;
+    }
+    #tl-btn-2:hover::before {
+      background-color: #00C7FF;
+      outline-color: #00C7FF;
+    }
+    #tl-btn-3:hover::before {
+      background-color: #00C7FF;
+      outline-color: #00C7FF;
+    }
+    #tl-btn-4:hover::before {
+      background-color: #00C7FF;
+      outline-color: #00C7FF;
+    }
+    #tl-btn-5:hover::before {
+      background-color: #00C7FF;
+      outline-color: #00C7FF;
+    }
+    #tl-btn-6:hover::before {
+      background-color: #00C7FF;
+      outline-color: #00C7FF;
+    }
+  }

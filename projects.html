@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nethaji-Portfolio</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link rel="icon" href="/images/logo/letter_n.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="exp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+
+
+</head>
+<body>
+    <canvas id="space_container"></canvas>
+    <div class="main-container">
+        <div class="container">
+
+            <nav class="navbar navbar-expand-lg navbar-dark mt-4 ">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="/index.html">
+                    <img src="/images/logo/letter_n.svg" alt="" style="width: 40px;border-radius: 67%;">
+                    <span class="navbar-logo-name">N</span>
+                    <span class="navbar-logo-name">E</span>
+                    <span class="navbar-logo-name">T</span>
+                    <span class="navbar-logo-name">H</span>
+                    <span class="navbar-logo-name">A</span>
+                    <span class="navbar-logo-name">J</span>
+                    <span class="navbar-logo-name">I</span>
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <!-- <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                      </li> -->
+                    </ul>
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="/index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#" tabindex="-1">Projects</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/files/resume/nethaji_resume.pdf" download="Nethaji_Resume.pdf" tabindex="-1">Resume <span><img src="/images/icons/download.svg" alt=""></span> </a>
+                      </li>
+                    </ul>
+                    <!-- <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form> -->
+                  </div>
+                </div>
+              </nav>
+
+              <div class="my-projects" style="margin-top: 30px;">
+                <div class="align-items-center projects_page  d-flex flex-column">
+                  <h2 class=" mb-2 text-center">Projects</h2>
+                  <p class="text-center">I've built cool apps and websites using anything from HTML to React (and even PHP!). Here are some of my favorite projects over the course of my journey.</p>
+                </div>
+                <div class="my-projects_container" style="color: white;">
+                  <div class="projects-grid">
+                    <div class="projects-grid-item">
+                      <div class="project-img">
+                        <a href="https://nethaji-ravi.github.io/huddle-landing-page/">
+                        <img src="/images/project_img/huddle_landing_page.jpg" alt="">
+                      </a>
+                      </div>
+                      <div class="project-main-title-div d-flex mt-3 w-100 justify-content-between">
+                        <div class="col-md-10">
+                          <h3>Huddle Landing Page</h3>
+                        </div>
+                        <div class="col-md-2 d-flex gap-2">
+                          <a href="https://nethaji-ravi.github.io/huddle-landing-page/"><img src="/images/icons/external-link.svg" alt=""></a>
+                          <a href="https://github.com/nethaji-ravi/huddle-landing-page"><img src="/images/icons/github.svg" alt=""></a>
+                        </div>
+                      </div>
+                      <div class="project-desc">
+                        <p>This is a Simple Responsive Landing Page build by html, css and javascript.</p>
+                      </div>
+                      <div class="project-btns w-100">
+                        <ul class="d-flex">
+                          <li>Html</li>
+                          <li>CSS</li>
+                          <li>Javascript</li>
+                        </ul>
+                      </div>
+
+                    </div>
+                    <div class="projects-grid-item">
+                      <div class="project-img">
+                        <a href="https://nethaji-ravi.github.io/loopstudios-landing-page/">
+                        <img src="/images/project_img/loopstudio_landing_page.jpg" alt="">
+                      </a>
+                      </div>
+                      <div class="project-main-title-div d-flex mt-3 w-100 justify-content-between">
+                        <div class="col-md-10">
+                          <h3>Loopstudio Landing Page</h3>
+                        </div>
+                        <div class="col-md-2 d-flex gap-2">
+                          <a href="https://nethaji-ravi.github.io/loopstudios-landing-page/"><img src="/images/icons/external-link.svg" alt=""></a>
+                          <a href="https://github.com/nethaji-ravi/loopstudios-landing-page"><img src="/images/icons/github.svg" alt=""></a>
+                        </div>
+                      </div>
+                      <div class="project-desc">
+                        <p>This is a Simple Responsive Landing Page build by html, css and javascript.</p>
+                      </div>
+                      <div class="project-btns w-100">
+                        <ul class="d-flex">
+                          <li>Html</li>
+                          <li>CSS</li>
+                          <li>Javascript</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="projects-grid-item">
+                      <div class="project-img">
+                        <a href="https://nethaji-ravi.github.io/shoe-shop/">
+                        <img src="/images/project_img/shoe_preview_design.jpg" alt="">
+                      </a>
+                      </div>
+                      <div class="project-main-title-div d-flex mt-3 w-100 justify-content-between">
+                        <div class="col-md-10">
+                          <h3>E-commerce product page</h3>
+                        </div>
+                        <div class="col-md-2 d-flex gap-2">
+                          <a href="https://nethaji-ravi.github.io/shoe-shop/"><img src="/images/icons/external-link.svg" alt=""></a>
+                          <a href="https://github.com/nethaji-ravi/shoe-shop"><img src="/images/icons/github.svg" alt=""></a>
+                        </div>
+                      </div>
+                      <div class="project-desc">
+                        <p>This is a Responsive shoe Preview Page in E-commerce website.</p>
+                      </div>
+                      <div class="project-btns w-100">
+                        <ul class="d-flex">
+                          <li>Html</li>
+                          <li>CSS</li>
+                          <li>Javascript</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="projects-grid-item">
+                      <div class="project-img">
+                        <a href="https://nethaji-ravi.github.io/newsletter-sign-up-form/">
+                        <img src="/images/project_img/newsletter.jpg" alt="">
+                      </a>
+                      </div>
+                      <div class="project-main-title-div d-flex mt-3 w-100 justify-content-between">
+                        <div class="col-md-10">
+                          <h3>Newsletter Signup Form</h3>
+                        </div>
+                        <div class="col-md-2 d-flex gap-2">
+                          <a href="https://nethaji-ravi.github.io/newsletter-sign-up-form/"><img src="/images/icons/external-link.svg" alt=""></a>
+                          <a href="https://github.com/nethaji-ravi/shoe-shop"><img src="/images/icons/github.svg" alt=""></a>
+                        </div>
+                      </div>
+                      <div class="project-desc">
+                        <p>This is a Responsive newsletter signup form.</p>
+                      </div>
+                      <div class="project-btns w-100">
+                        <ul class="d-flex">
+                          <li>Html</li>
+                          <li>CSS</li>
+                          <li>Javascript</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="view_all_projects-div mt-5 d-flex justify-content-center align-items-center">
+                  <button class="view_all_projects_btn w-50" >View All</button>
+                </div> -->
+              </div>
+
+
+
+              <footer style="border-top: 1px solid;">
+                <div class="footer">
+                  <div class="footer-container d-flex  flex-column text-white" style="height: 300px;">
+                    <h4 class="footer_title">Pages</h4>
+                      <div class="pages">
+                        <div class="my-3">
+                          <a href="/index.html">Home</a>
+                        </div>
+                        <div class="my-3">
+                          <a href="#">Projects</a>
+                        </div>
+                        <div class="my-3">
+                          <a href="#">Contact</a>
+                        </div>
+                      </div>
+                    <!-- <p>Copyright @ 2023</p> -->
+                  </div>
+                  <div class="footer-container d-flex  flex-column text-white" style="height: 300px;">
+                    <h4 class="footer_title">Social</h4>
+                      <div class="pages">
+                        <div class="my-3">
+                          <a href="https://github.com/nethaji-ravi">
+                            <span>
+                              <img src="/images/icons/github-f.svg" alt="">
+                            </span>
+                            Github</a>
+                        </div>
+                        <div class="my-3">
+                          <a href="https://www.linkedin.com/in/nethaji-ravi" class="align-items-end d-flex justify-content-start gap-2">
+                            <span>
+                              <img src="/images/icons/linkedin-f.svg" alt="">
+                            </span>
+                            LinkedIn</a>
+                        </div>
+                        <div class="my-3">
+                          <a href="mailto:nethaji156@gmail.com" class="align-items-end d-flex justify-content-start gap-2">
+                            <span>
+                              <img src="/images/icons/mail-f.svg" alt="">
+                            </span>
+                            Email</a>
+                        </div>
+                        <div class="my-3">
+                          <a href="https://twitter.com/156navin" class="align-items-end d-flex justify-content-start gap-2">
+                            <span>
+                              <img src="/images/icons/twitter-f.svg" alt="">
+                            </span>
+                            Twitter</a>
+                        </div>
+                        <div class="my-3">
+                          <a href="https://instagram.com/navin_netha_156" class="align-items-end d-flex justify-content-start gap-2">
+                            <img src="/images/icons/instagram-f.svg" alt="">
+                            Instagram</a>
+                        </div>
+                      </div>
+                    <!-- <p>Copyright @ 2023</p> -->
+                  </div>
+                  <div class="footer-container footer-container-support d-flex  flex-column text-white" style="height: 300px;">
+                    <h4 class="footer_title">Support My Work</h4>
+                      <div class="support-my-work"> 
+                        <div class="my-3">
+                          <a href="/images/icons/github-f.svg">
+                            <span>
+                              <img src="/images/icons/github-sw.svg" alt="">
+                            </span>
+                            Github</a>
+                        </div>
+                        <!-- <div class="my-3">
+                          <a href="#">Projects</a>
+                        </div> -->
+                        <p style="font-size: 12px;color: #7B89A8;">I appreciate your support very much! 💙</p>
+                      </div>
+                    <!-- <p>Copyright @ 2023</p> -->
+                  </div>
+                  <div>
+
+                  </div>
+                  <div>
+
+                  </div>
+                </div>
+                <div class="copyright-div">
+                  <p class="copyright-p" id="copyright-text"></p>
+                </div>
+              </footer>
+
+
+        </div>
+     </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="space.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

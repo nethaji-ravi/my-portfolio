@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nethaji-Portfolio</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link rel="icon" href="/images/logo/letter_n.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="exp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+
+
+</head>
+<body>
+    <canvas id="space_container"></canvas>
+    <!-- <h1>Floating Particles</h1> -->
+     <div class="main-container">
+        <div class="container">
+
+            <nav class="navbar navbar-expand-lg navbar-dark mt-4 ">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <img src="/images/logo/letter_n.svg" alt="" style="width: 40px;border-radius: 67%;">
+                    <span class="navbar-logo-name">N</span>
+                    <span class="navbar-logo-name">E</span>
+                    <span class="navbar-logo-name">T</span>
+                    <span class="navbar-logo-name">H</span>
+                    <span class="navbar-logo-name">A</span>
+                    <span class="navbar-logo-name">J</span>
+                    <span class="navbar-logo-name">I</span>
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <!-- <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                      </li> -->
+                    </ul>
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/projects.html" tabindex="-1">Projects</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/files/resume/nethaji_resume.pdf" download="Nethaji_Resume.pdf" tabindex="-1">Resume <span><img src="/images/icons/download.svg" alt=""></span> </a>
+                      </li>
+                    </ul>
+                    <!-- <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form> -->
+                  </div>
+                </div>
+              </nav>
+              <div class="d-flex justify-content-center align-items-center flex-column text-white hero-section mb-5">
+                <div><h5>Hi I am Nethaji.</h5></div>
+                <div><p>I am a Full Stack Developer</p></div>
+                <h1 class="main-banner-description">I enjoy <span class="primary-blue">building</span> and <span class="primary-blue">designing</span> for the web.
+                <img src="../images/hero/html.svg" alt="" class="floating html-position">
+                <img src="../images/hero/nethaji.svg" alt="" class="floating nethaji-position">
+                <img src="../images/hero/coder.svg" alt="" class="floating coder-position">
+                <img src="../images/hero/js.svg" alt="" class="floating js-position">
+                <img src="../images/hero/dino.svg" alt="" class="floating dino-position">
+                <img src="../images/hero/paintbrush.svg" alt="" class="floating paint-brush-position">
+                <img src="../images/hero/pop1.svg" alt="" class="pop1-position">
+                <img src="../images/hero/code.svg" alt="" class="floating code-position">
+                </h1>
+                <a href="#about-myself" class="tell-me-more-btn">Tell Me More</a>
+                
+              </div>
+              <div class="skills_tools_infinite_scroll">
+                <div class="align-items-center align-items-md-start d-flex flex-column">
+                  <h2 class="infinite_scroll_title mb-5 text-center">The Stack Behind My Code</h2>
+                </div>
+
+                <section class="slide-option">
+                  <div id="infinite" class="highway-slider">
+                    <div class="container highway-barrier">
+                      <ul class="highway-lane">
+                        <li class="highway-car"><span class="fab fa-angular"></span></li>
+                        <li class="highway-car"><span class="fab fa-js"></span></li>
+                        <li class="highway-car"><span class="fab fa-node"></span></li>
+                        <li class="highway-car"><span class="fab fa-html5"></span></li>
+                        <li class="highway-car"><span class="fab fa-less"></span></li>
+                        <li class="highway-car"><span class="fab fa-gulp"></span></li>
+                        <li class="highway-car"><span class="fab fa-stack-overflow"></span></li>
+                        <li class="highway-car"><span class="fab fa-codepen"></span></li>
+                        <li class="highway-car"><span class="fab fa-aws"></span></li>
+                        <li class="highway-car"><span class="fab fa-gitlab"></span></li>
+                        <li class="highway-car"><span class="fab fa-chrome"></span></li>
+                        <li class="highway-car"><span class="fab fa-google"></span></li>
+                        
+                        <li class="highway-car"><span class="fab fa-angular"></span></li>
+                        <li class="highway-car"><span class="fab fa-js"></span></li>
+                        <li class="highway-car"><span class="fab fa-node"></span></li>
+                        <li class="highway-car"><span class="fab fa-html5"></span></li>
+                        <li class="highway-car"><span class="fab fa-less"></span></li>
+                        <li class="highway-car"><span class="fab fa-gulp"></span></li>
+                        <li class="highway-car"><span class="fab fa-stack-overflow"></span></li>
+                        <li class="highway-car"><span class="fab fa-codepen"></span></li>
+                        <li class="highway-car"><span class="fab fa-aws"></span></li>
+                        <li class="highway-car"><span class="fab fa-gitlab"></span></li>
+                        <li class="highway-car"><span class="fab fa-chrome"></span></li>
+                        <li class="highway-car"><span class="fab fa-google"></span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </section>       
+              </div>
+
+              <div class="about_myself" id="about-myself">
+                <h2 class="about_myself_title mb-5">Meet the Developer Behind the Screen</h2>
+                <div class="about_myself_container d-flex flex-wrap flex-column-reverse flex-md-row">
+                  <div class="about_myself_container_left col-md-8 col-12">
+                    <!-- <h1>left</h1> -->
+                    <div class="terminal-ui mb-5">
+                      <div class="terminal-header d-flex justify-content-between align-items-center text-white">
+                        <!-- <div class="terminal-header-left"> -->
+                          <div class="terminal-header-left-name">
+                            <!-- <span class="terminal-header-left-name-first-name">Nethaji</span> -->
+                             <button class="btn"><?xml version="1.0" ?><svg class="plus_svg"height="30" viewBox="0 0 48 48" width="30" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h48v48H0V0z" fill="none"/><path d="M42 6H6c-2.21 0-4 1.79-4 4v24c0 2.21 1.79 4 4 4h10v4h16v-4h10c2.21 0 3.98-1.79 3.98-4L46 10c0-2.21-1.79-4-4-4zm0 28H6V10h36v24zM32 20v4h-6v6h-4v-6h-6v-4h6v-6h4v6h6z"/></svg></button>
+                          </div>
+                          <div class="terminal-header-center">
+                            <p class="mb-0">nethaji_r@stn 150: /var/nethaji/about-myself</p>
+                          </div>
+                          <div class="align-items-center d-flex gap-1 terminal-header-last">
+                            <button class="btn text-white"style="background:gray;font-size: 12px;"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            <button class="btn text-white"style="background:gray;font-size: 12px;margin-right:20px;"><i class="fa-solid fa-bars"></i></button>
+                            <button class="three-btn"><i class="fa-solid fa-minus "></i></button>
+                            <button class="three-btn"><i class="fa-regular fa-square"></i></button>
+                            <button class="btn-danger m-1 rounded-circle"><i class="fa-solid fa-xmark "></i></button>
+
+                          </div>
+                        <!-- </div> -->
+                      </div>
+                      <div class="terminal-content p-2">
+                         <p></p>
+                        <span id="AboutDevTypeText" class="typeing" style="color:#00ff00;">nethaji_r@stn 150:<span style="color:#2E4A8B;">/var/nethaji/about</span> </span><span id="terminal-animation"></span><span class='blinker'>&#32;</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="about_myself_container_right col-md-4 col-12" id="profile-div">
+                     <div class="profile-img-div dotted-loader">
+                        <!-- <div id="circle">
+                          <img src="/images/logo/nethaji-profile.jpg" alt="Profile" class="profile">
+                          <div id="text-container-profile" data-text="SEE MORE SEE MORE&nbsp;" data-icons='["github" , "html", "css", "javascript", "php", "react", "node", "mysql", "angular","mongodb" , "java", "sass", "wordpress","stack-overflow","git"]'></div>
+                        </div> -->
+                        <div id="circle">
+                          <video autoplay muted loop class="profile">
+                            <source src="/images/logo/nethaji-profile-video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
+                          <div id="text-container-profile" 
+                              data-text="SEE MORE SEE MORE&nbsp;" 
+                              data-icons='["github", "html", "css", "javascript", "php", "react", "node", "mysql", "angular", "mongodb", "java", "sass", "wordpress", "stack-overflow", "git"]'></div>
+                        </div>
+                    </div>
+                  <!-- </div> -->
+                     
+                    
+                </div>
+                </div>
+                <div class="company-experience-container d-flex flex-wrap flex-column flex-md-row">
+                  <div class="company-experience col-md-7 col-12">
+                    <div class="accordion bs-timeline">
+                      <div class="accordion-item item-1">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                          <button id="tl-btn-1" class="accordion-button  fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            2024 - Novalnet e-solutions pvt ltd., India
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                          <div class="accordion-body fw-light">
+                            Building on the experience gained during my internship, I am now proud to be contributing as a Software Developer at Novalnet. This role marks a new chapter in my career, allowing me to apply my skills, tackle real-world challenges, and grow within a forward-thinking organization.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item item-2">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                          <button id="tl-btn-2" class="accordion-button  fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            2023 - Mobile Tutor Private Ltd., India
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
+                          <div class="accordion-body fw-light">
+                            After completing my Master’s degree in Computer Applications, I took my first professional step by joining Mobile Tutor Private Ltd. as an intern from May 2023 to January 2024. This opportunity allowed me to dive into the industry, gain hands-on experience, and hone my skills in a dynamic environment.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item item-3">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                          <button id="tl-btn-3" class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            2022 - The Beginning of My Journey
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                          <div class="accordion-body fw-light">
+                            In 2022, I embarked on an exciting journey as a software developer, marking the beginning of my career. While pursuing my Master’s degree in Computer Applications, I undertook the ambitious task of developing my first major project—an E-Voting Application. This project was a transformative experience that tested my skills, creativity, and determination. It not only strengthened my technical foundation but also ignited a passion for creating impactful solutions. The e-voting application became more than just a project; it was a stepping stone that shaped my path in the ever-evolving world of software development.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="github-graph col-md-5 col-12 py-4">
+                    <!-- <h3>My GitHub Contributions</h3>
+                    <img src="https://github-contributions.vercel.app/api/v1/nethaji-ravi" alt="GitHub Contribution Graph" /> -->
+                    <!-- <iframe src="https://www.gitch.art/api/og/nethaji-ravi?color=2da44e" width="1200" height="180" frameborder="0" scrolling="no"></iframe> -->
+                    <iframe frameBorder="0" height="190px" width="100%" src="https://git-graph.vercel.app/embed/nethaji-ravi?showColorLegend=true&showWeekdayLabels=true&showMonthLabels=true&showTotalCount=true&blockMargin=2&blockRadius=2&blockSize=13&fontSize=14&weekStart=4&year=2025"></iframe>
+                    <p class="text-center" style="color: #7B89A8; margin-top: 10px;">Github Contribution Graph.</p>
+                  </div>
+                </div>
+                
+              </div>
+
+              <div class="my-projects" style="margin-top: 30px;">
+                <div class="align-items-center align-items-md-start d-flex flex-column">
+                  <h2 class="my-projects_title mb-5 text-center">Here are a few of my favorite projects.</h2>
+                </div>
+                <div class="my-projects_container" style="color: white;">
+                  <div class="projects-grid">
+                    <div class="projects-grid-item">
+                      <div class="project-img">
+                        <a href="https://nethaji-ravi.github.io/huddle-landing-page/">
+                        <img src="/images/project_img/huddle_landing_page.jpg" alt="">
+                      </a>
+                      </div>
+                      <div class="project-main-title-div d-flex mt-3 w-100 justify-content-between">
+                        <div class="col-md-10">
+                          <h3>Huddle Landing Page</h3>
+                        </div>
+                        <div class="col-md-2 d-flex gap-2">
+                          <a href="https://nethaji-ravi.github.io/huddle-landing-page/"><img src="/images/icons/external-link.svg" alt=""></a>
+                          <a href="https://github.com/nethaji-ravi/huddle-landing-page"><img src="/images/icons/github.svg" alt=""></a>
+                        </div>
+                      </div>
+                      <div class="project-desc">
+                        <p>This is a Simple Responsive Landing Page build by html, css and javascript.</p>
+                      </div>
+                      <div class="project-btns w-100">
+                        <ul class="d-flex">
+                          <li>Html</li>
+                          <li>CSS</li>
+                          <li>Javascript</li>
+                        </ul>
+                      </div>
+
+                    </div>
+                    <div class="projects-grid-item">
+                      <div class="project-img">
+                        <a href="https://nethaji-ravi.github.io/loopstudios-landing-page/">
+                        <img src="/images/project_img/loopstudio_landing_page.jpg" alt="">
+                      </a>
+                      </div>
+                      <div class="project-main-title-div d-flex mt-3 w-100 justify-content-between">
+                        <div class="col-md-10">
+                          <h3>Loopstudio Landing Page</h3>
+                        </div>
+                        <div class="col-md-2 d-flex gap-2">
+                          <a href="https://nethaji-ravi.github.io/loopstudios-landing-page/"><img src="/images/icons/external-link.svg" alt=""></a>
+                          <a href="https://github.com/nethaji-ravi/loopstudios-landing-page"><img src="/images/icons/github.svg" alt=""></a>
+                        </div>
+                      </div>
+                      <div class="project-desc">
+                        <p>This is a Simple Responsive Landing Page build by html, css and javascript.</p>
+                      </div>
+                      <div class="project-btns w-100">
+                        <ul class="d-flex">
+                          <li>Html</li>
+                          <li>CSS</li>
+                          <li>Javascript</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="projects-grid-item">
+                      <div class="project-img">
+                        <a href="https://nethaji-ravi.github.io/shoe-shop/">
+                        <img src="/images/project_img/shoe_preview_design.jpg" alt="">
+                      </a>
+                      </div>
+                      <div class="project-main-title-div d-flex mt-3 w-100 justify-content-between">
+                        <div class="col-md-10">
+                          <h3>E-commerce product page</h3>
+                        </div>
+                        <div class="col-md-2 d-flex gap-2">
+                          <a href="https://nethaji-ravi.github.io/shoe-shop/"><img src="/images/icons/external-link.svg" alt=""></a>
+                          <a href="https://github.com/nethaji-ravi/shoe-shop"><img src="/images/icons/github.svg" alt=""></a>
+                        </div>
+                      </div>
+                      <div class="project-desc">
+                        <p>This is a Responsive shoe Preview Page in E-commerce website.</p>
+                      </div>
+                      <div class="project-btns w-100">
+                        <ul class="d-flex">
+                          <li>Html</li>
+                          <li>CSS</li>
+                          <li>Javascript</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="view_all_projects-div mt-5 d-flex justify-content-center align-items-center">
+                  <a href="/projects.html" class="view_all_projects_btn w-50">View All</a>
+                  <!-- <button class="view_all_projects_btn w-50" >View All</button> -->
+                </div>
+              </div>
+
+              <div class="my-skill-set mt-5" style="margin-top: 8rem !important;">
+                <div class="my-skill-set-container row flex-wrap flex-column flex-md-row" style="min-height: 400px;">
+                  <div class="col-12 col-md-6 my-skill-set-container-title py-2 py-md-0 text-white">
+                    <h2 class="relative text-center">I got the experience.<br>Here is my toolbelt for success.</h2>
+                    <img src="/images/hero/skills/laptop.svg" alt="laptop" class="skillset-laptop-position">
+                    <img src="/images/hero/skills/coding.svg" alt="coding" class="skillset-coding-position">
+                    <img src="/images/hero/skills/youtube.svg" alt="youtube" class="skillset-youtube-position">
+                    <img src="/images/hero/skills/fillStar.svg" alt="fillStar" class="skillset-fillStar-position">
+                  </div>
+                  <div class="col-md-6" style="padding-left:20px;">  
+                    <div class="my-experices-grid-image">
+                      <div class="experices-image-div align-items-center d-flex flex-column justify-content-center" style="width:2.5rem">
+                        <img src="/images/experience_icons/html.svg" style="width:40px;height:40px;" alt="">
+                        <p>Html</p>
+                      </div>
+                      <div class="experices-image-div align-items-center d-flex flex-column justify-content-center" style="width:2.5rem">
+                        <img src="/images/experience_icons/css.svg" style="width:40px;height:40px;" alt="">
+                        <p>CSS</p>
+                      </div>
+                      <div class="experices-image-div align-items-center d-flex flex-column justify-content-center" style="width:2.5rem">
+                        <img src="/images/experience_icons/javascript.svg" style="width:40px;height:40px;" alt="">
+                        <p>Javascript</p>
+                      </div>
+                      <div class="experices-image-div align-items-center d-flex flex-column justify-content-center" style="width:2.5rem">
+                        <img src="/images/experience_icons/php.svg" style="width:40px;height:40px;" alt="">
+                        <p>Php</p>
+                      </div>
+                      <div class="experices-image-div align-items-center d-flex flex-column justify-content-center" style="width:2.5rem">
+                        <img src="/images/experience_icons/mysql.svg" style="width:40px;height:40px;" alt="">
+                        <p>Mysql</p>
+                      </div>
+                      <div class="experices-image-div align-items-center d-flex flex-column justify-content-center" style="width:2.5rem">
+                        <img src="/images/experience_icons/mongodb.svg" style="width:40px;height:40px;" alt="">
+                        <p>MongoDb</p>
+                      </div>
+                      <div class="experices-image-div align-items-center d-flex flex-column justify-content-center" style="width:2.5rem">
+                        <img src="/images/experience_icons/git.svg" style="width:40px;height:40px;" alt="">
+                        <p>Git</p>
+                      </div>
+                      <div class="experices-image-div align-items-center d-flex flex-column justify-content-center" style="width:2.5rem">
+                        <img src="/images/experience_icons/github-2.svg" style="width:40px;height:40px;" alt="">
+                        <p>Github</p>
+                      </div>
+                      <div class="experices-image-div align-items-center d-flex flex-column justify-content-center" style="width:2.5rem">
+                        <img src="/images/experience_icons/figma.svg" style="width:40px;height:40px;" alt="">
+                        <p>Figma</p>
+                      </div>
+                      <div class="experices-image-div align-items-center d-flex flex-column justify-content-center" style="width:2.5rem">
+                        <img src="/images/experience_icons/react.svg" style="width:40px;height:40px;" alt="">
+                        <p>React</p>
+                      </div>
+                      <div class="experices-image-div align-items-center d-flex flex-column justify-content-center" style="width:2.5rem">
+                        <img src="/images/experience_icons/node-2.svg" style="width:40px;height:40px;" alt="">
+                        <p>Node</p>
+                      </div>
+                      <div class="experices-image-div align-items-center d-flex flex-column justify-content-center" style="width:2.5rem">
+                        <img src="/images/experience_icons/scss2.svg" style="width:40px;height:40px;" alt="">
+                        <p>Sass</p>
+                      </div>
+                      <div class="experices-image-div align-items-center d-flex flex-column justify-content-center" style="width:2.5rem">
+                        <img src="/images/experience_icons/wordpress.svg" style="width:40px;height:40px;" alt="">
+                        <p>WordPress</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="my-testimonals mt-5">
+                <div style="overflow-x: hidden;" class="align-items-center align-items-md-start d-flex flex-column">
+                  <h2 class="my-testimonals_title text-center mb-5">Why people love my work!</h2>
+                </div>
+                <div class="my-testimonals_container" style="color: white;">
+                  <div class="my-testimonal-div">
+                    <img src="/images/hero/testimonials/yay.svg" alt="" class="yah-image">
+                    <p class="reviews">"The communication throughout the project was spot on and the genre of design was carried out well."</p>
+                    <!-- <p class="reviewer-name"><b>Wilson Bright</b> - Co-Founder of BlockSurvey</p> -->
+                  </div>
+                  <div class="my-testimonal-div">
+                    <p class="reviews">""The code was clean, easy to understand, and exactly what I was looking for."</p>
+                    <!-- <p class="reviewer-name"><b>Wilson Bright</b> - Co-Founder of BlockSurvey</p> -->
+                  </div>
+                  <div class="my-testimonal-div">
+                    <p class="reviews">"My vision was executed perfectly. The quality and speed of the work was excellent."</p>
+                    <!-- <p class="reviewer-name"><b>Wilson Bright</b> - Co-Founder of BlockSurvey</p> -->
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="contact-me mt-5 ">
+                <img src="/images/hero/testimonials/lineBreak.svg" alt="" class="line-break-img">
+                <div class="contact-me-container d-flex justify-content-center align-items-center flex-column text-white text-center">
+                  <h1 class="contact-me_title mb-5">Interested in Working Together?</h1>
+                  <a href="mailto:nethaji156@gmail.com"><button>Get In Touch</button></a>
+                </div>
+
+
+                <div class="contact-form w-100">
+                  <div class="contact-form-container">
+                    <div class="contact-form-content">
+                      <div class="image-box">
+                        <img src="/images/icons/space_fighter.png" alt="" class="floating">
+                      </div>
+                      <form id="contactForm">
+                        <div class="topic">Send us a message</div>
+                        <div class="input-box">
+                          <input type="text" id="name" required>
+                          <label>Enter your name</label>
+                        </div>
+                        <div class="input-box">
+                          <input type="email" id="email" required>
+                          <label>Enter your email</label>
+                        </div>
+                        <div class="message-box">
+                          <textarea id="message" required placeholder="Enter your message" style="padding: 0 20px;"></textarea>
+                        </div>
+                        <div class="input-box">
+                          <input type="submit" value="Send Message">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                
+                <img src="/images/hero/fancyLines.svg" alt="" class="fancy-lines">
+              </div>
+
+
+              <footer>
+                <div class="footer">
+                  <div class="footer-container d-flex  flex-column text-white" style="height: 300px;">
+                    <h4 class="footer_title">Pages</h4>
+                      <div class="pages">
+                        <div class="my-3">
+                          <a href="index.html">Home</a>
+                        </div>
+                        <div class="my-3">
+                          <a href="/projects.html">Projects</a>
+                        </div>
+                        <div class="my-3">
+                          <a href="#">Contact</a>
+                        </div>
+                      </div>
+                    <!-- <p>Copyright @ 2023</p> -->
+                  </div>
+                  <div class="footer-container d-flex  flex-column text-white" style="height: 300px;">
+                    <h4 class="footer_title">Social</h4>
+                      <div class="pages">
+                        <div class="my-3">
+                          <a href="https://github.com/nethaji-ravi">
+                            <span>
+                              <img src="/images/icons/github-f.svg" alt="">
+                            </span>
+                            Github</a>
+                        </div>
+                        <div class="my-3">
+                          <a href="https://www.linkedin.com/in/nethaji-ravi" class="align-items-end d-flex justify-content-start gap-2">
+                            <span>
+                              <img src="/images/icons/linkedin-f.svg" alt="">
+                            </span>
+                            LinkedIn</a>
+                        </div>
+                        <div class="my-3">
+                          <a href="mailto:nethaji156@gmail.com" class="align-items-end d-flex justify-content-start gap-2">
+                            <span>
+                              <img src="/images/icons/mail-f.svg" alt="">
+                            </span>
+                            Email</a>
+                        </div>
+                        <div class="my-3">
+                          <a href="https://twitter.com/156navin" class="align-items-end d-flex justify-content-start gap-2">
+                            <span>
+                              <img src="/images/icons/twitter-f.svg" alt="">
+                            </span>
+                            Twitter</a>
+                        </div>
+                        <div class="my-3">
+                          <a href="https://instagram.com/navin_netha_156" class="align-items-end d-flex justify-content-start gap-2">
+                            <img src="/images/icons/instagram-f.svg" alt="">
+                            Instagram</a>
+                        </div>
+                      </div>
+                    <!-- <p>Copyright @ 2023</p> -->
+                  </div>
+                  <div class="footer-container footer-container-support d-flex  flex-column text-white" style="height: 300px;">
+                    <h4 class="footer_title">Support My Work</h4>
+                      <div class="support-my-work"> 
+                        <div class="my-3">
+                          <a href="/images/icons/github-f.svg">
+                            <span>
+                              <img src="/images/icons/github-sw.svg" alt="">
+                            </span>
+                            Github</a>
+                        </div>
+                        <!-- <div class="my-3">
+                          <a href="#">Projects</a>
+                        </div> -->
+                        <p style="font-size: 12px;color: #7B89A8;">I appreciate your support very much! 💙</p>
+                      </div>
+                    <!-- <p>Copyright @ 2023</p> -->
+                  </div>
+                  <div>
+
+                  </div>
+                  <div>
+
+                  </div>
+                </div>
+                <div class="copyright-div">
+                  <p class="copyright-p" id="copyright-text"></p>
+                </div>
+              </footer>
+
+
+        </div>
+     </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="space.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
